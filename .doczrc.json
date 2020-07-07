@@ -1,0 +1,5 @@
+{
+  "files": "**/*.mdx",
+  "typescript": true,
+  "codeSandbox": false
+}

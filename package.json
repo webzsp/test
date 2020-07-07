@@ -1,0 +1,44 @@
+{
+  "name": "@huang6349/example",
+  "version": "0.0.1-alpha.6",
+  "description": "Here's an example of the react component library",
+  "keywords": [
+    "react"
+  ],
+  "author": "huang6349 <252683858@qq.com>",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "father build",
+    "build:publish": "yarn publish --access public",
+    "build:publish:next": "yarn publish --tag next --access public",
+    "doc:build": "father doc build",
+    "doc:deploy": "yarn run doc:build && father doc deploy --branch gh-example --repo https://github.com/huang6349/netlify.git",
+    "doc:dev": "father doc dev",
+    "prepublishOnly": "yarn run build",
+    "start": "yarn run doc:dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huang6349/basic-library-template.git",
+    "directory": "packages/example"
+  },
+  "homepage": "https://github.com/huang6349/basic-library-template",
+  "bugs": "https://github.com/huang6349/basic-library-template/issues",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.16",
+    "@types/react-dom": "^16.8.4",
+    "father": "^2.3.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "typescript": "^3.5.1"
+  }
+}
